@@ -147,7 +147,7 @@ async def play(_, message: Message):
 
 ❇️ **Title:** {x["title"]}
 
-⏳ **Duration:** {round(x["duration"] / 60)} Mins
+⏳ **Duration:** {round(x["duration"] / 180)} Mins
 👀 **Views:** `{x["view_count"]}`
 👍 **Like:** `{x["like_count"]}`
 👎 **Dislike:** `{x["dislike_count"]}`
