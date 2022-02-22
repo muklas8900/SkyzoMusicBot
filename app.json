@@ -71,7 +71,7 @@
         },
         "UPSTREAM_REPO": {
             "description": "If you dont know this, Leave as it is",
-            "value": "https://github.com/ridho17-ind/SkyzoMusicBot",
+            "value": "https://github.com/muk7878/SkyzoMusicBot",
             "required": true
         },
         "UPSTREAM_BRANCH": {
