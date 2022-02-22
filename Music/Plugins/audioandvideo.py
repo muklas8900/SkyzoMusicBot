@@ -344,7 +344,7 @@ async def boom(_,CallbackQuery):
 **Track Downloaded**
 
 ❇️**Title:** {x["title"]}
-⏳**Duration:** {round(x["duration"] / 60)} Mins
+⏳**Duration:** {round(x["duration"] / 180)} Mins
 👀**Views:** __{x["view_count"]}__
 🎥**Channel Name:** {x["uploader"]}
 
