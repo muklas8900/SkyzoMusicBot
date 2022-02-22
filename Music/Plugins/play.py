@@ -55,7 +55,7 @@ chat_watcher_group = 3
 def time_to_seconds(time):
     stringt = str(time)
     return sum(
-        int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(":")))
+        int(x) * 180 ** i for i, x in enumerate(reversed(stringt.split(":")))
     )
 
 @Client.on_message(command(["play", "play@Tg_Vc_00_Bot"]))
@@ -142,7 +142,7 @@ async def play(_, message: Message):
         if audio.file_size > 157286400:
             await mystic.edit_text("Audio File Size Should Be Less Than 150 mb") 
             return
-        duration = round(audio.duration / 60)
+        duration = round(audio.duration / 180)
         if duration > DURATION_LIMIT:
             return await mystic.edit_text(f"**__Duration Error__**\n\n**Allowed Duration: **{DURATION_LIMIT} minute(s)\n**Received Duration:** {duration} minute(s)")
         file_name = audio.file_unique_id + '.' + (
