@@ -30,7 +30,7 @@ def start_pannel():
             InlineKeyboardButton(text="Updates", url=f"https://t.me/{CHANNEL}"),
         ],
         [
-            InlineKeyboardButton("Command", url="https://telegra.ph/Skyzo-11-10"),
+            InlineKeyboardButton("Command", url="https://telegra.ph/-02-27-378"),
         ],
     ]
     return (
@@ -78,9 +78,9 @@ async def welcome(_, message: Message):
                 out = start_pannel()
                 await message.reply_text(
                     f"""
-👋 **Hi, Thanks For Adding Me To The Group**
+👋 **Halo,Terima Kasih Telah Menambahkan Saya Ke Grup**
 
-🛵 **Don't Forget To Make Me Admin So Music Can Run Normally**
+🛵 **Jangan Lupa untuk Jadikan Saya Admin Agar Musik Bisa Berjalan Normal**
 """,
                     reply_markup=InlineKeyboardMarkup(out[1]),
                     disable_web_page_preview=True
@@ -101,8 +101,8 @@ async def start(_, message: Message):
     out = start_pannel()
     await message.reply_text(
         f"""
-**[🚀]({BOT_IMG}) Thanks For Adding Me To {message.chat.title}.**
-**㊙️ {BOT_NAME} Is Music Player And Video Player Bot**
+**[🚀]({BOT_IMG}) Terima kasih telah menambahkan saya ke {message.chat.title}.**
+**㊙️ {BOT_NAME} adalah Pemutar Musik Dan Pemutar Video Bot**
 """,
         reply_markup=InlineKeyboardMarkup(out[1]),
         disable_web_page_preview=True
