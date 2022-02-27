@@ -50,9 +50,9 @@ pstart_markup = InlineKeyboardMarkup(
             InlineKeyboardButton("Updates", url=f"https://t.me/{CHANNEL}"),
         ],
         [
-            InlineKeyboardButton("Cd Music", url="https://telegra.ph/Skyzo-11-10"),
-            InlineKeyboardButton("Cd Dev", url="https://telegra.ph/壊Skyzo-01-21"),
-            InlineKeyboardButton("Cd Stream", url="https://telegra.ph/sᴋʏᴢᴏ-ᴇx-12-21"),
+            InlineKeyboardButton("Cd Music", url="https://telegra.ph/-02-27-324"),
+            InlineKeyboardButton("Cd Dev", url="https://telegra.ph/-02-27-325"),
+            InlineKeyboardButton("Cd Stream", url="https://telegra.ph/-02-27-326"),
         ],
     ]
 )
@@ -119,11 +119,10 @@ async def play(_, message: Message):
         await app.send_message(
             message.chat.id,
             text=f"""
-**[🗣]({BOT_IMG}) Hello {rpk}! Ready Use Me?
+**[🗣]({BOT_IMG}) Hello {rpk}!
 
-🉐 [{BOT_NAME}](tg://user?id=2129034376) Is A Bot That Can Be Used To Listen To Songs In Voice Chat And Can Play Videos In Voice Chat!
-
-🧰 To Find Out All The Available Command Bots, You Can Press The Two Buttons Below, Namely Cd Music, Cd Dev And Cd Stream**
+🉐 [{BOT_NAME}](tg://user?id=2129034376) Adalah Bot Yang Dapat Digunakan Untuk Mendengarkan Lagu Dalam Obrolan Suara Dan Dapat Memutar Video Dalam Obrolan Suara!
+🧰 Untuk Mengetahui Semua Bot Perintah Yang Tersedia, Anda Dapat Menekan Tombol Di Bawah Ini Yaitu Cd Music, Cd Dev And Cd Stream**
 
 """,
             parse_mode="markdown",
