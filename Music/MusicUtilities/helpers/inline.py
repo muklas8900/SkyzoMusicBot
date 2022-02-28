@@ -30,8 +30,8 @@ def others_markup(videoid, user_id):
                 InlineKeyboardButton(text="⏹️", callback_data=f'stopvc2'),
             ],
             [
-                InlineKeyboardButton(text="Add Your List", callback_data=f'playlist {videoid}|{user_id}'),
-                InlineKeyboardButton(text="Add Group List", callback_data=f'group_playlist {videoid}|{user_id}')
+                InlineKeyboardButton(text="➕ Add Your List", callback_data=f'playlist {videoid}|{user_id}'),
+                InlineKeyboardButton(text="➕ Add Group List", callback_data=f'group_playlist {videoid}|{user_id}')
             ],
             [
                 InlineKeyboardButton(text="⬇️ Get Audio", callback_data=f'gets audio|{videoid}|{user_id}'),
@@ -101,7 +101,7 @@ def search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, dura
             [
                 
                 InlineKeyboardButton(text="➡️", callback_data=f'popat 1|{query}|{user_id}'),
-                InlineKeyboardButton(text="Close", callback_data=f"ppcl2 smex|{user_id}"),      
+                InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data=f"ppcl2 smex|{user_id}"),      
             ],
         ]
     return buttons   
@@ -120,7 +120,7 @@ def search_markup2(ID6, ID7, ID8, ID9, ID10, duration6, duration7, duration8, du
             [ 
                 
                 InlineKeyboardButton(text="⬅️", callback_data=f'popat 2|{query}|{user_id}'), 
-                InlineKeyboardButton(text="Close", callback_data=f"ppcl2 smex|{user_id}"),             
+                InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data=f"ppcl2 smex|{user_id}"),             
             ],
         ]
     return buttons 
@@ -132,7 +132,7 @@ def personal_markup(link):
                 InlineKeyboardButton(text="Watch On Youtube", url=f'{link}')
             ],
             [ 
-                InlineKeyboardButton(text="🗑 Close", callback_data=f'close2')
+                InlineKeyboardButton(text="🗑 ᴛᴜᴛᴜᴘ", callback_data=f'close2')
             ],
         ]
     return buttons   
