@@ -321,7 +321,7 @@ async def play(_, message: Message):
         checking = f"[{message.from_user.first_name}](tg://user?id={message.from_user.id})"
         await message.reply_photo(
             photo=thumb,
-            caption=(f"💡 **Track Added To Queue »** `{position}`\n\n🏷️<b> **Title:** </b>[{title[:25]}]({url}) \n⏳🕰️<b> **Duration:** </b> {duration} \n🎧<b> **Requested By:** </b>{checking}"),
+            caption=(f"💡 **Track Added To Queue »** `{position}`\n\n🏷️<b> **Judul:** </b>[{title[:25]}]({url}) \n⏳🕰️<b> **Durasi:** </b> {duration} \n🎧<b> **Atas Permintaan:** </b>{checking}"),
             reply_markup=InlineKeyboardMarkup(buttons)
         )
         return await mystic.delete()     
@@ -352,7 +352,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo=thumb,
         reply_markup=InlineKeyboardMarkup(buttons),    
-        caption=(f"🏷️<b> **Title:** </b>[{title[:25]}]({url}) \n🕰️<b> **Duration:** </b> {duration} \n🎧<b> **Requested by:** </b>{checking}")
+        caption=(f"🏷️<b> **Judul:** </b>[{title[:25]}]({url}) \n🕰️<b> **Durasi:** </b> {duration} \n🎧<b> **Atas Permintaan:** </b>{checking}")
     )   
         return await mystic.delete()
          
@@ -469,7 +469,7 @@ async def startyuplay(_,CallbackQuery):
         await mystic.delete()
         m = await CallbackQuery.message.reply_photo(
         photo=thumb,
-        caption=(f"💡 **Track added to queue »** `{position}`\n\n🏷️<b> **Title:** </b>[{title[:25]}]({url}) \n🕰️<b> **Duration:** </b> {duration} \n🎧<b> **Requested by:** </b>{checking}"),
+        caption=(f"💡 **Track added to queue »** `{position}`\n\n🏷️<b> **Judul:** </b>[{title[:25]}]({url}) \n🕰️<b> **Durasi:** </b> {duration} \n🎧<b> **Atas Permintaan:** </b>{checking}"),
         reply_markup=InlineKeyboardMarkup(buttons)
     )
         os.remove(thumb)
@@ -491,7 +491,7 @@ async def startyuplay(_,CallbackQuery):
         m = await CallbackQuery.message.reply_photo(
         photo=thumb,
         reply_markup=InlineKeyboardMarkup(buttons),    
-        caption=(f"🏷️<b> **Title:** </b>[{title[:25]}]({url}) \n🕰️<b> **Duration:** </b> {duration} \n🎧<b> **Requested by:** </b>{checking}")
+        caption=(f"🏷️<b> **Judul:** </b>[{title[:25]}]({url}) \n🕰️<b> **Durasi:** </b> {duration} \n🎧<b> **Atas Permintaan:** </b>{checking}")
     )   
         os.remove(thumb)
         await CallbackQuery.message.delete()
