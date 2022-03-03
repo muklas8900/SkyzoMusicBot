@@ -43,16 +43,14 @@ pstart_markup = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                "Add Me To Your Group", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+                "𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
         ],
         [
-            InlineKeyboardButton("Support", url=f"https://t.me/{GROUP}"),
-            InlineKeyboardButton("Channel", url=f"https://t.me/{CHANNEL}"),
+            InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/{GROUP}"),
+            InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{CHANNEL}"),
         ],
         [
-            InlineKeyboardButton("Cd Music", url="https://telegra.ph/-02-27-324"),
-            InlineKeyboardButton("Cd Dev", url="https://telegra.ph/-02-27-325"),
-            InlineKeyboardButton("Cd Stream", url="https://telegra.ph/-02-27-326"),
+            InlineKeyboardButton("🎵ᴄᴍᴅ ᴍᴜsɪᴄ & ᴠɪᴅᴇᴏ 🎵", url="https://telegra.ph/-03-03-607"),
         ],
     ]
 )
@@ -121,7 +119,7 @@ async def play(_, message: Message):
             text=f"""
 **[🗣]({BOT_IMG}) Hello {rpk}!
 
-🉐 [{BOT_NAME}](tg://user?id=2129034376) Adalah Bot Yang Dapat Digunakan Untuk Mendengarkan Lagu Dalam Obrolan Suara Dan Dapat Memutar Video Dalam Obrolan Suara!
+✨ [{BOT_NAME}](tg://user?id=2129034376) Adalah Bot Yang Dapat Digunakan Untuk Mendengarkan Lagu Dalam Obrolan Suara Dan Dapat Memutar Video Dalam Obrolan Suara!
 🧰 Untuk Mengetahui Semua Bot Perintah Yang Tersedia, Anda Dapat Menekan Tombol Di Bawah Ini Yaitu Cd Music, Cd Dev And Cd Stream**
 
 """,
