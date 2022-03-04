@@ -119,8 +119,8 @@ async def play(_, message: Message):
             text=f"""
 **[🗣]({BOT_IMG}) Hello {rpk}!
 
-✨ [{BOT_NAME}](tg://user?id=2129034376) Adalah Bot Yang Dapat Digunakan Untuk Mendengarkan Lagu Dalam Obrolan Suara Dan Dapat Memutar Video Dalam Obrolan Suara!
-🧰 Untuk Mengetahui Semua Bot Perintah Yang Tersedia, Anda Dapat Menekan Tombol Di Bawah Ini Yaitu Cd Music, Cd Dev And Cd Stream**
+✨ [{BOT_NAME}](t.me/{BOT_USERNAME}) Adalah Bot Yang Dapat Digunakan Untuk Mendengarkan Lagu Dalam Obrolan Suara Dan Dapat Memutar Video Dalam Obrolan Suara!
+🧰 Untuk Mengetahui Semua Bot Perintah Yang Tersedia, Anda Dapat Menekan Tombol Di Bawah Ini Yaitu 🎵ᴄᴍᴅ ᴍᴜsɪᴄ & ᴠɪᴅᴇᴏ🎵*
 
 """,
             parse_mode="markdown",
