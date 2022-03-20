@@ -289,9 +289,27 @@ async def play(_, message: Message):
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         hmo = await message.reply_photo(
             photo=thumb, 
-            caption=(f"1️⃣<b>{title1[:25]}</b>\n┣ ❤️‍🔥 __Powered By {BOT_NAME}__\n┗ 🧰 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n\n2️⃣<b>{title2[:25]}</b>\n┣ ❤️‍🔥 __Powered By {BOT_NAME}__\n┗ 🧰 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID2})__</u>\n\n3️⃣<b>{title3[:25]}</b>\n┣ ❤️‍🔥 __Powered By {BOT_NAME}__\n┗ 🧰 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID3})__</u>\n\n4️⃣<b>{title4[:25]}</b>\n┣ ❤️‍🔥 __Powered By {BOT_NAME}__\n┗ 🧰 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID4})__</u>\n\n5️⃣<b>{title5[:25]}</b>\n┣ ❤️‍🔥 __Powered {BOT_NAME}__\n┗ 🧰 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID5})__</u>"),    
+            caption=(
+            f"""
+**🏷 sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ʟᴜ ᴘᴜᴛᴀʀ 👀**
+¹ <b>{title1[:65]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
+  ╚ ❒ **{BOT_NAME}**
+² <b>{title2[:65]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
+  ╚ ❒ **{BOT_NAME}**
+³ <b>{title3[:65]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
+  ╚ ❒ **{BOT_NAME}**
+⁴ <b>{title4[:65]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
+  ╚ ❒ **{BOT_NAME}**
+⁵ <b>{title5[:65]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
+  ╚ ❒ **{BOT_NAME}**
+""",
             reply_markup=InlineKeyboardMarkup(buttons),
-        )  
+        ) 
         disable_web_page_preview=True
         return   
     if await is_active_chat(chat_id):
@@ -551,22 +569,51 @@ async def popat(_,CallbackQuery):
     if i == 1:
         buttons = search_markup2(ID6, ID7, ID8, ID9, ID10, duration6, duration7, duration8, duration9, duration10 ,user_id, query)
         await CallbackQuery.edit_message_text(
-            f"6️⃣<b>{title6[:25]}</b>\n┣ ⚡ __Powered By {BOT_NAME}__\n┗ 💎 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID6})__</u>\n\n7️⃣<b>{title7[:25]}</b>\n┣ ⚡ __Powered By {BOT_NAME}__\n┗ 💎 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID7})__</u>\n\n8️⃣<b>{title8[:25]}</b>\n┣ ⚡ __Powered By {BOT_NAME}__\n┗ 💎 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID8})__</u>\n\n9️⃣<b>{title9[:25]}</b>\n┣ ⚡ __Powered By {BOT_NAME}__\n┗ 💎 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID9})__</u>\n\n🔟<b>{title10[:25]}</b>\n┣ ⚡ Powered By {BOT_NAME}__\n┗ 💎 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID10})__</u>",    
-            reply_markup=InlineKeyboardMarkup(buttons),
-        )  
+            f"""
+<b>**🏷 sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ʟᴜ ᴘᴜᴛᴀʀ 👀**</b>
+⁶ <b>{title6[:60]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
+  ╚ ❒ **{BOT_NAME}**
+⁷ <b>{title7[:60]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
+  ╚ ❒ *{BOT_NAME}**
+⁸ <b>{title8[:60]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
+  ╚ ❒ **{BOT_NAME}**
+⁹ <b>{title9[:60]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
+  ╚ ❒ **{BOT_NAME}**
+¹⁰ <b>{title10[:60]}</b>
+   ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
+   ╚ ❒ **{BOT_NAME}**
+""",
+            reply_markup=InlineKeyboardMarkup(buttons),  
         disable_web_page_preview=True
         return    
     if i == 2:
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         await CallbackQuery.edit_message_text(
-            f"1️⃣<b>{title1[:25]}</b>\n┣ ⚡ __Powered By {BOT_NAME}__\n┗ 💎 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n\n2️⃣<b>{title2[:25]}</b>\n┣ ⚡ __Powered By {BOT_NAME}__\n┗ 💎 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID2})__</u>\n\n3️⃣<b>{title3[:25]}</b>\n┣ ⚡ __Powered By {BOT_NAME}__\n┗ 💎 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID3})__</u>\n\n4️⃣<b>{title4[:25]}</b>\n┣ ⚡ __Powered By {BOT_NAME}__\n┗ 💎 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID4})__</u>\n\n5️⃣<b>{title5[:25]}</b>\n┣ ⚡ __Powered By {BOT_NAME}__\n┗ 💎 <u>__[Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{ID5})__</u>",    
-            reply_markup=InlineKeyboardMarkup(buttons),
-        )  
+            f"""
+**🏷 sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ʟᴜ ᴘᴜᴛᴀʀ 👀**
+¹ <b>{title1[:65]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
+  ╚ ❒ **{BOT_NAME}**
+² <b>{title2[:65]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
+  ╚ ❒ **{BOT_NAME}**
+³ <b>{title3[:65]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
+  ╚ ❒ **{BOT_NAME}**
+⁴ <b>{title4[:65]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
+  ╚ ❒ **{BOT_NAME}**
+⁵ <b>{title5[:65]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
+  ╚ ❒ **{BOT_NAME}**
+""",
+            reply_markup=InlineKeyboardMarkup(buttons),  
         disable_web_page_preview=True
-        return    
-        
-        
-        
+        return       
         
 @app.on_message(filters.command("playplaylist"))
 async def play_playlist_cmd(_, message):
