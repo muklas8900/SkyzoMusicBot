@@ -587,7 +587,8 @@ async def popat(_,CallbackQuery):
    ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
    ╚ ❒ **{BOT_NAME}**
 """,
-            reply_markup=InlineKeyboardMarkup(buttons),  
+            reply_markup=InlineKeyboardMarkup(buttons),
+        )  
         disable_web_page_preview=True
         return    
     if i == 2:
@@ -611,7 +612,8 @@ async def popat(_,CallbackQuery):
   ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
   ╚ ❒ **{BOT_NAME}**
 """,
-            reply_markup=InlineKeyboardMarkup(buttons),  
+            reply_markup=InlineKeyboardMarkup(buttons),
+        )
         disable_web_page_preview=True
         return       
         
