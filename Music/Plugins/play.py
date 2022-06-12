@@ -293,19 +293,14 @@ async def play(_, message: Message):
             f"""
 **🏷 sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ʟᴜ ᴘᴜᴛᴀʀ 👀**
 ¹ <b>{title1[:65]}</b>
-  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
   ╚ ❒ **{BOT_NAME}**
 ² <b>{title2[:65]}</b>
-  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
   ╚ ❒ **{BOT_NAME}**
 ³ <b>{title3[:65]}</b>
-  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
   ╚ ❒ **{BOT_NAME}**
 ⁴ <b>{title4[:65]}</b>
-  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
   ╚ ❒ **{BOT_NAME}**
 ⁵ <b>{title5[:65]}</b>
-  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
   ╚ ❒ **{BOT_NAME}**
 """,
             reply_markup=InlineKeyboardMarkup(buttons),
@@ -339,7 +334,7 @@ async def play(_, message: Message):
         checking = f"[{message.from_user.first_name}](tg://user?id={message.from_user.id})"
         await message.reply_photo(
             photo=thumb,
-            caption=(f"💡 **Track Added To Queue »** `{position}`\n\n🏷️<b> **Judul:** </b>[{title[:25]}]({url}) \n⏳🕰️<b> **Durasi:** </b> {duration} \n🎧<b> **Atas Permintaan:** </b>{checking}"),
+            caption=(f"〃<b>**Queued added to:**</b> <b>#{position}! \n\n〃<b>**ᴊᴜᴅᴜʟ:**</b>[{title[:25]}]({link}) \n〃<b>**ᴅᴜʀᴀsɪ:**</b> {duration} \n〃<b>**ᴅɪᴍɪɴᴛᴀ ᴏʟᴇʜ:** </b>{checking}"),
             reply_markup=InlineKeyboardMarkup(buttons)
         )
         return await mystic.delete()     
@@ -370,7 +365,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo=thumb,
         reply_markup=InlineKeyboardMarkup(buttons),    
-        caption=(f"🏷️<b> **Judul:** </b>[{title[:25]}]({url}) \n🕰️<b> **Durasi:** </b> {duration} \n🎧<b> **Atas Permintaan:** </b>{checking}")
+        caption=(f"〃<b>**ᴊᴜᴅᴜʟ:**</b>[{title[:25]}]({link}) \n〃<b>**ᴅᴜʀᴀsɪ:**</b> {duration} \n〃<b>**ᴅɪᴍɪɴᴛᴀ ᴏʟᴇʜ:** </b>{checking}")
     )   
         return await mystic.delete()
          
@@ -487,7 +482,7 @@ async def startyuplay(_,CallbackQuery):
         await mystic.delete()
         m = await CallbackQuery.message.reply_photo(
         photo=thumb,
-        caption=(f"💡 **Track added to queue »** `{position}`\n\n🏷️<b> **Judul:** </b>[{title[:25]}]({url}) \n🕰️<b> **Durasi:** </b> {duration} \n🎧<b> **Atas Permintaan:** </b>{checking}"),
+        caption=(f"〃<b>**Queued added to:**</b> <b>#{position}! \n\n〃<b>**ᴊᴜᴅᴜʟ:**</b>[{title[:25]}]({link}) \n〃<b>**ᴅᴜʀᴀsɪ:**</b> {duration} \n〃<b>**ᴅɪᴍɪɴᴛᴀ ᴏʟᴇʜ:** </b>{checking}"),
         reply_markup=InlineKeyboardMarkup(buttons)
     )
         os.remove(thumb)
@@ -509,7 +504,7 @@ async def startyuplay(_,CallbackQuery):
         m = await CallbackQuery.message.reply_photo(
         photo=thumb,
         reply_markup=InlineKeyboardMarkup(buttons),    
-        caption=(f"🏷️<b> **Judul:** </b>[{title[:25]}]({url}) \n🕰️<b> **Durasi:** </b> {duration} \n🎧<b> **Atas Permintaan:** </b>{checking}")
+        caption=(f"〃<b>**ᴊᴜᴅᴜʟ:**</b>[{title[:25]}]({link}) \n〃<b>**ᴅᴜʀᴀsɪ:**</b> {duration} \n〃<b>**ᴅɪᴍɪɴᴛᴀ ᴏʟᴇʜ:** </b>{checking}")
     )   
         os.remove(thumb)
         await CallbackQuery.message.delete()
@@ -572,19 +567,14 @@ async def popat(_,CallbackQuery):
             f"""
 <b>**🏷 sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ʟᴜ ᴘᴜᴛᴀʀ 👀**</b>
 ⁶ <b>{title6[:60]}</b>
-  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
   ╚ ❒ **{BOT_NAME}**
 ⁷ <b>{title7[:60]}</b>
-  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
   ╚ ❒ *{BOT_NAME}**
 ⁸ <b>{title8[:60]}</b>
-  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
   ╚ ❒ **{BOT_NAME}**
 ⁹ <b>{title9[:60]}</b>
-  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
   ╚ ❒ **{BOT_NAME}**
 ¹⁰ <b>{title10[:60]}</b>
-   ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
    ╚ ❒ **{BOT_NAME}**
 """,
             reply_markup=InlineKeyboardMarkup(buttons),
@@ -597,19 +587,14 @@ async def popat(_,CallbackQuery):
             f"""
 **🏷 sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ʟᴜ ᴘᴜᴛᴀʀ 👀**
 ¹ <b>{title1[:65]}</b>
-  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
   ╚ ❒ **{BOT_NAME}**
 ² <b>{title2[:65]}</b>
-  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
   ╚ ❒ **{BOT_NAME}**
 ³ <b>{title3[:65]}</b>
-  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
   ╚ ❒ **{BOT_NAME}**
 ⁴ <b>{title4[:65]}</b>
-  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
   ╚ ❒ **{BOT_NAME}**
 ⁵ <b>{title5[:65]}</b>
-  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
   ╚ ❒ **{BOT_NAME}**
 """,
             reply_markup=InlineKeyboardMarkup(buttons),
